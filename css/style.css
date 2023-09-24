@@ -1,217 +1,651 @@
-<!DOCTYPE html>
-<html lang="en">
+/* FONTS */
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/css/style.css?1687297226" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500&display=swap" rel="stylesheet" />
-    <link>
-    <script src="https://kit.fontawesome.com/0f20a4a5dc.js" crossorigin="anonymous"></script>
-    <title>Refract Team</title>
-    <link rel="manifest" href="/manifest.json">
-    <meta name="apple-mobile-web-app-title" content="Scora Hub">
-    <link rel="apple-touch-icon" href="https://scora.top/img/logo_sh_official.png">
-    <meta name="theme-color" content="#222226">
-    <meta name="description" content="© SCORA HUB ALL RIGHTS RESERVED">
-    <meta property="og:title" content="Scora Hub">
-    <meta property="og:description" content="© SCORA HUB ALL RIGHTS RESERVED">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Scora Hub">
-    <meta property="og:url" content="https://scora.top/">
-    <meta property="og:image" content="https://scora.top/img/logo_sh_official.png">
-    <meta property="twitter:title" content="Scora Hub">
-    <meta property="twitter:description" content="© SCORA HUB ALL RIGHTS RESERVED">
-    <meta name="twitter:card" content="summary">
-    <meta property="twitter:image" content="https://scora.top/img/logo_sh_official.png">
-    <link rel="canonical" href="https://scora.top/">
-    <link type="application/json+oembed" href="/site.json">
-</head>
+/* Poppins Medium 500 and Open Sans Regular 400 */
 
-<body>
-    <header class="header">
-        <div class="arrow-cirlce" id="scroll-to-section-btn">
-            <i class="fa-solid fa-chevron-down arrow"></i>
-            <div class="dashed-line"></div>
-        </div>
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500&display=swap");
+/* CSS RESET */
 
-        <div class="header__logo-box">
-            <img src="img/kush.png" alt="Inferno logo" class="header__logo" />
-        </div>
-        <div class="header__light1 light"></div>
-        <div class="header__light2 light"></div>
-        <a href="https://reflect.team/login" class="btn" target="_blank">Log In</a
-        >
-  
-        <div class="header__text-box">
-          <h1 class="heading-primary">
-            <span class="heading-primary__main"
-              >Refract<span class="heading-primary__lua">.cc</span></span
-            >
-            <span class="heading-primary__sub">Best DLC for csgo.</span>
-          </h1>
-        </div>
-      </header>
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
 
-    
-<!-- Features -->
-<section class="features" id="section2">
-    <h1 class="features-header">Features</h1>
-    <div class="features-cards">
-      <div class="card">
-        <div class="card-content">
-          <div class="card-content__icon">
-            <i class="fas fa-solid fa-eye"></i>
-          </div>
-          <h1 class="card-content__heading">Visuals</h1>
-          <p class="card-content__text">
-            Amazing and unique visuals allow you to modulate the entire game by using simple sliders and controls.
-          </p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-content">
-          <div class="card-content__icon">
-            <i class="fas fa-solid fa-crosshairs"></i>
-          </div>
-          <h1 class="card-content__heading">Ragebot</h1>
-          <p class="card-content__text">
-            Powerful ragebot hvh features, such as customizable hitchance, safepoints and anti-aim allow you to beat any enemy.
-          </p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-content">
-          <div class="card-content__icon">
-            <i class="fas fa-solid fa-tag"></i>
-          </div>
-          <h1 class="card-content__heading">Prices</h1>
-          <p class="card-content__text">
-            Our DLC is the most affordable option on the market, starting at
-            just $10, while still offering all the essential features you need.
-          </p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-content">
-          <div class="card-content__icon">
-            <i class="fas fa-solid fa-user-graduate"></i>
-          </div>
-          <h1 class="card-content__heading">Developers</h1>
-          <p class="card-content__text">
-            Our team consists of experienced and trustworthy DLC developers
-            who are dedicated to delivering high-quality products to our
-            users.
-          </p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-content">
-          <div class="card-content__icon">
-            <i class="fas fa-solid fa-shield"></i>
-          </div>
-          <h1 class="card-content__heading">Security</h1>
-          <p class="card-content__text">
-            While we may store some information, such as your HWID and other
-            data, for the loader to work, we take great care in securing it to
-            prevent it from falling into the wrong hands.
-          </p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-content">
-          <div class="card-content__icon">
-            <i class="fas fa-solid fa-pen-to-square"></i>
-          </div>
-          <h1 class="card-content__heading">Updates</h1>
-          <p class="card-content__text">
-            We always ensure to provide the best updates and listen to the
-            community's feedback, incorporating new features accordingly.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
+html {
+    font-family: "Open Sans", sans-serif;
+    scroll-behavior: smooth;
+    color: #fff;
+}
 
-  <!-- Prices -->
-  <section class="prices">
-    <div class="prices-cards">
-      <div class="prices-card stable">
-        <h1 class="prices-card__heading">Game<span class="heading-primary__lua">Sense</span></span</h1>
-        <h1 class="price-card__price">€10.00</h1>
-        <div class="prices-card_content">
-          <p class="prices-card__text">
-            <i class="fa-solid fa-check"></i>&nbsp; Strong Anti-Aim
-          </p>
-          <p class="prices-card__text">
-            <i class="fa-solid fa-check"></i>&nbsp; Powerful Ragebot
-          </p>
-          <p class="prices-card__text">
-            <i class="fa-solid fa-check"></i>&nbsp; Beautiful Visuals
-          </p>
-          <p class="prices-card__text">
-            <i class="fa-solid fa-check"></i>&nbsp; Alot Of Misc Features
-          </p>
-          <p class="prices-card__text">
-            <i class="fa-solid fa-check"></i>&nbsp; Fast Support
-          </p>
-          <p class="prices-card__text">
-            <i class="fa-solid fa-check"></i>&nbsp; Often Updates
-          </p>
-          <button
-            class="btn2"
-            data-sellix-product="650f619fa15f3"
-            type="submit"
-            alt="Buy Now with sellix.io"
-          >
-            Purchase
-          </button>
-        </div>
-      </div>
-      <div class="prices-card debug">
-        <h1 class="prices-card__heading__debug">GameSense <span class="heading-primary">[BETA]</span></span]</h1>
-        <h1 class="price-card__price_debug">€20.00<!--<s>$15</s>--></h1>
-        <div class="prices-card_content__debug">
-          <p class="prices-card__text">
-            <i class="fa-solid fa-check"></i>&nbsp; Even More Powerful Ragebot
-          </p>
-          <p class="prices-card__text">
-            <i class="fa-solid fa-check"></i>&nbsp; Better Anti-Aim
-          </p>
-          <p class="prices-card__text">
-            <i class="fa-solid fa-check"></i>&nbsp; Aimbot Improvements
-          </p>
-          <p class="prices-card__text">
-            <i class="fa-solid fa-check"></i>&nbsp; Updates From Before
-          </p>
-          <p class="prices-card__text">
-            <i class="fa-solid fa-check"></i>&nbsp; More Misc Features
-          </p>
-          <p class="prices-card__text">
-            <i class="fa-solid fa-check"></i>&nbsp; Outstanding Performance
-          </p>
-          <button
-            class="btn2debug"
-            data-sellix-product="650f60326d4ee"
-            type="submit"
-            alt="Buy Now with sellix.io"
-          >
-            Purchase
-          </button>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Footer -->
-  <section class="footer">
-    <div class="footer-heading">Join Our <span>Discord</span> Server</div>
-    <a href="https://discord.gg/sjbfDdUj7a" class="footer-btn" target="_blank"
-      >JOIN NOW</a
-    >
-  </section>    <script src="js/main.js"></script>
-    <script src="https://cdn.sellix.io/static/js/embed.js"></script>
-<script>(function(){var js = "window['__CF$cv$params']={r:'7da72b920dd42859',m:'UCOCC9NmMVoyA4fkBsVDcJY8xWKmZncEvYeP90iBheU-1687297226-0-AVozbxWf61O9FchCehMYpdC22ljQ6V9ukIgT5J2l9OrP'};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/scripts/invisible.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.nonce = '';_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body>
-</html>
+body {
+    background-color: #1d1d1d;
+}
+
+/* ------------------- Main Page --------------------- */
+
+@keyframes arrow-anim {
+    0% {
+        margin-top: 0.1rem;
+    }
+    100% {
+        margin-top: 0.4rem;
+    }
+}
+
+header {
+    height: 48em;
+    background-image: linear-gradient(#1d1d1dd3, #1d1d1dd3), url(/img/1.png);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+}
+
+.arrow-cirlce {
+    position: relative;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: dashed 2px #91C750;
+    border-radius: 40rem;
+    height: 3.3rem;
+    width: 3.3rem;
+    z-index: 9999;
+    transition: 0.4s all;
+}
+
+.arrow::before {
+    color: #91C750;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.4s all;
+    animation-name: cirlce-anim;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.dashed-line {
+    position: absolute;
+    top: 70%;
+    right: -70%;
+    background-color: transparent;
+    border-bottom: 2px dashed #91C750;
+    transform: rotate(90deg);
+    margin-top: 5.3rem;
+    width: 8rem;
+}
+
+.arrow-cirlce:hover {
+    background-color: #91C750;
+}
+
+.arrow-cirlce:hover .arrow::before {
+    margin-top: 0.5rem;
+    color: #252425;
+    transition: 0.5s all;
+}
+
+.header__logo-box {
+    position: absolute;
+
+    border-radius: 0.5rem;
+    top: 4rem;
+    left: 10rem;
+}
+
+.header__logo {
+    height: 3.5rem;
+}
+
+.btn {
+    position: absolute;
+    top: 4rem;
+    right: 10rem;
+    background-color: #91C750;
+    box-shadow: 0px 0px 1.2rem #91C750;
+    color: #252425;
+    text-decoration: none;
+    border: 1px solid #91C750;
+    font-weight: 200;
+    padding: 0.8rem 2.4rem;
+    border-radius: 0.5rem;
+    transition: 0.5s all;
+}
+
+.btn:hover {
+    transition: 0.5s all;
+    color: #252425;
+    background-color: #91C750;
+    box-shadow: 0px 0px 1.2rem #91C750;
+    transform: scale(1.1);
+    font-weight: 200;
+}
+
+.light {
+    background-color: #91C750;
+    border-radius: 2rem;
+    height: 6rem;
+    width: 6rem;
+    filter: blur(6rem);
+}
+
+.header__light1 {
+    position: absolute;
+    top: 70%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.header__light2 {
+    position: absolute;
+    top: 30%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+}
+
+.header__text-box {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.heading-primary {
+    color: #fff;
+    margin-bottom: 6rem;
+}
+
+.heading-primary__main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 500;
+    font-family: "Poppins", open-sans;
+}
+
+.heading-primary__lua {
+    color: #91C750;
+}
+
+.heading-primary__sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #4a4a4a;
+}
+
+.heading__scrolldown {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ------------------- Features Page --------------------- */
+
+.features-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.features-header {
+    margin: 8rem 0 5rem 0;
+    font-size: 3.5rem;
+    font-weight: 800;
+    font-family: "Poppins", open-sans;
+    text-align: center;
+}
+
+.card {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    background-color: #252425;
+    border: 1.5px solid #91C750;
+    border-radius: 5px;
+    margin: 1rem;
+    width: 31rem;
+    height: 20rem;
+    box-shadow: 0px 0px 0.8rem #91C750;
+}
+
+.card-content__heading {
+    color: #91C750;
+    font-family: "Poppins", open-sans;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-content {
+    max-width: 25rem;
+    font-size: 1.2rem;
+}
+
+.card-content__text {
+    font-weight: 200;
+    margin-bottom: 2rem;
+}
+
+.card-content__icon {
+    position: relative;
+    background-color: #91C750;
+    width: 4rem;
+    height: 4rem;
+    margin: 2rem auto 2rem auto;
+    border-radius: 90rem;
+}
+
+.fas {
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ------------------- Prices Page --------------------- */
+
+.prices {
+    margin-top: 12rem;
+    height: 50em;
+    background-image: linear-gradient(#1d1d1dd3, #1d1d1dd3), url(/img/2.png);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+}
+
+.prices-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.stable {
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #252425;
+    border: 1.5px solid #91C750;
+    border-radius: 5px;
+    margin: 4rem 0.2rem;
+    width: 25rem;
+    height: 35rem;
+}
+
+.debug {
+    position: relative;
+    color: #252425;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    background-color: #91C750;
+    border: 1.5px solid #252425;
+    border-radius: 5px;
+    margin: 4rem 0.2rem;
+    width: 25em;
+    height: 40rem;
+}
+
+.prices-card__heading {
+    font-family: "Poppins", sans-serif;
+    font-size: 2.5rem;
+    margin-top: -5rem;
+}
+
+.prices-card__heading__debug {
+    font-family: "Poppins", sans-serif;
+    font-size: 2.5rem;
+    margin-top: -6rem;
+}
+
+.prices-card_content__debug {
+    margin-top: -14rem;
+}
+
+.price-card__price {
+    position: absolute;
+    top: 26%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.price-card__price_debug {
+    position: absolute;
+    top: 26%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+/* .price-card__price_debug > s {
+  position: absolute;
+  margin-left: 0.3rem;
+  color: #4a4a4a;
+  font-size: 1rem;
+} */
+
+.prices-card_content {
+    margin-top: -12rem;
+}
+
+.prices-card__text {
+    max-width: 18rem;
+    margin-bottom: 1rem;
+}
+
+.prices-card__text {
+    text-align: start;
+}
+
+.btn2debug {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #252425;
+    color: #91C750;
+    text-decoration: none;
+    font-weight: 200;
+    padding: 0.8rem 2.8rem;
+    border-radius: 0.5rem;
+    transition: 0.5s all;
+}
+
+.btn2debug:hover {
+    transform: translate(-50%, -50%) scale(1.15);
+}
+
+.btn2 {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #91C750;
+    color: #252425;
+    text-decoration: none;
+    font-weight: 200;
+    padding: 0.8rem 2.8rem;
+    border-radius: 0.5rem;
+    transition: 0.5s all;
+}
+
+.btn2:hover {
+    transform: translate(-50%, -50%) scale(1.15);
+}
+
+/* ------------------- Footer Page --------------------- */
+
+.footer {
+    height: 35em;
+    background-image: linear-gradient(#1d1d1d93, #1d1d1d93), url(/img/3.png);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+}
+
+.footer-heading {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-family: "Poppins", open-sans;
+}
+
+.footer-heading span {
+    color: #91C750;
+}
+
+.footer-btn {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #91C750;
+    box-shadow: 0px 0px 1.2rem #91C750;
+    color: #000000;
+    text-decoration: none;
+    border: 1px solid #91C750;
+    font-weight: 200;
+    padding: 0.8rem 2.4rem;
+    border-radius: 0.5rem;
+    transition: 0.5s all;
+}
+
+.footer-btn:hover {
+    transition: 0.5s all;
+    color: #252425;
+    background-color: #91C750;
+    box-shadow: 0px 0px 1.2rem #91C750;
+    transform: translate(-50%, -50%) scale(1.1);
+    font-weight: 200;
+}
+
+/* ------------------- Responsive Design --------------------- */
+
+@media (max-width: 992px) {
+    .header__text-box {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    .heading-primary {
+        color: #fff;
+        margin-bottom: 6rem;
+    }
+    .heading-primary__main {
+        display: block;
+        font-size: 4rem;
+        font-weight: 500;
+        font-family: "Poppins", open-sans;
+    }
+    .heading-primary__lua {
+        color: #91C750;
+    }
+    .heading-primary__sub {
+        display: block;
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: #4a4a4a;
+    }
+    .heading__scrolldown {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    /* Logo */
+    .header__logo-box {
+        position: absolute;
+        top: 4rem;
+        left: 1rem;
+    }
+    .header__logo {
+        height: 2.5rem;
+    }
+    /* Button */
+    .btn {
+        position: absolute;
+        top: 4rem;
+        right: 1rem;
+        background-color: transparent;
+        color: #e6e6fa;
+        text-decoration: none;
+        border: 1px solid #91C750;
+        font-weight: 200;
+        padding: 0.4rem 1.4rem;
+        border-radius: 0.5rem;
+        transition: 0.5s all;
+    }
+    /* Dashed Line */
+    .dashed-line {
+        position: absolute;
+        top: 25%;
+        right: -26%;
+        background-color: transparent;
+        border-bottom: 2px dashed #91C750;
+        transform: rotate(90deg);
+        margin-top: 5.3rem;
+        width: 5rem;
+    }
+    /* Features */
+    .card-content__heading {
+        color: #91C750;
+        font-family: "Poppins", open-sans;
+        font-size: 1.4rem;
+        margin-bottom: 0.5rem;
+    }
+    .card-content {
+        max-width: 20rem;
+        font-size: 1rem;
+    }
+    .card-content__text {
+        font-weight: 200;
+        margin-bottom: 2rem;
+    }
+    /* price */
+    .prices {
+        margin-top: 12rem;
+        height: 80em;
+        background-image: linear-gradient(#1d1d1dd3, #1d1d1dd3), url(/img/2.png);
+        background-size: cover;
+        background-position: top;
+        position: relative;
+    }
+    .prices-cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: 0 auto;
+    }
+    .stable {
+        position: relative;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #252425;
+        border: 1.5px solid #91C750;
+        border-radius: 5px;
+        margin: 4rem 0.2rem;
+        width: 22rem;
+        height: 32rem;
+    }
+    .debug {
+        position: relative;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #91C750;
+        border: 1.5px solid #252425;
+        border-radius: 5px;
+        margin: 4rem 0.2rem;
+        width: 22rem;
+        height: 32rem;
+    }
+    .prices-card__heading {
+        font-family: "Poppins", sans-serif;
+        font-size: 2.5rem;
+        margin-top: -5rem;
+    }
+    .prices-card__heading__debug {
+        font-family: "Poppins", sans-serif;
+        font-size: 2.5rem;
+        margin-top: -5rem;
+    }
+    .prices-card_content__debug {
+        margin-top: -10rem;
+    }
+    .price-card__price {
+        position: absolute;
+        top: 26%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 2rem;
+    }
+    .price-card__price_debug {
+        position: absolute;
+        top: 26%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 2rem;
+    }
+    .prices-card_content {
+        margin-top: -10rem;
+    }
+    .prices-card__text {
+        max-width: 18rem;
+        margin-bottom: 1rem;
+    }
+    /* Footer */
+    .footer {
+        height: 35em;
+        background-image: linear-gradient(#1d1d1d93, #1d1d1d93), url(/img/3.png);
+        background-size: cover;
+        background-position: top;
+        position: relative;
+    }
+    .footer-heading {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 2.5rem;
+        text-align: center;
+        font-weight: 500;
+        font-family: "Poppins", open-sans;
+    }
+    .footer-heading span {
+        color: #91C750;
+    }
+    .footer-btn {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: transparent;
+        color: #e6e6fa;
+        text-decoration: none;
+        border: 1px solid #91C750;
+        font-weight: 200;
+        padding: 0.8rem 2.4rem;
+        border-radius: 0.5rem;
+        transition: 0.5s all;
+    }
+}
